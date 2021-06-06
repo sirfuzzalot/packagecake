@@ -1,4 +1,4 @@
-__version__ = "1.0.0"
+__version__ = "1.0.2"
 
 from .bakery import bake
 from .pypi_cake_stats import generate_report
