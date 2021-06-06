@@ -1,0 +1,16 @@
+#!/bin/sh
+echo "----------------------"
+echo "--- Pre-Commit Hook --"
+echo "----------------------"
+echo "📋 Flake8 📋"
+python -m flake8 && echo "No Errors"
+echo ""
+
+echo "🖊️  Black 🖊️"
+python -m black .
+echo ""
+
+echo "🗂️  isort 🗂️"
+python -m isort . && echo "Imports Sorted"
+echo ""
+echo "----------------------"
